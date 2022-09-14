@@ -12,6 +12,8 @@
   body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background: rgb(111,108,108);
+    background: linear-gradient(159deg, rgba(111,108,108,1) 0%, rgba(54,53,53,1) 26%, rgba(47,36,36,1) 50%, rgba(111,108,108,1) 100%);  
   }
 
   .inactive {
@@ -26,6 +28,10 @@
   }
   .menu {
     display: none;
+    position: relative;
+    width: 25px;
+    height: 21px;
+    top: 17px;
   }
   .logo {
     width: 100px;
@@ -49,7 +55,6 @@
   .navbar-right ul li a {
     text-decoration: none;
     color: var(--very-light-pink);
-    border: 1px solid var(--white);
     padding: 8px;
     border-radius: 8px;
   }
@@ -68,6 +73,14 @@
   }
   .navbar-shopping-cart {
     position: relative;
+  }
+  .navbar-shopping-cart img {
+    width: 27px;
+    height: 21px;
+  }
+  .navbar-shopping-cart div {
+    background-color: lightblue;
+    color: #fff;
   }
   .navbar-shopping-cart:hover {
     cursor: pointer;
@@ -286,6 +299,7 @@ aside {
   font-size: var(--md);
   margin-top: 0;
   margin-bottom: 4px;
+  color: #fff;
 }
 .product-card .product-info div p:nth-child(2) {
   font-size: var(--sm);
